@@ -4,9 +4,11 @@ let grid=document.getElementById("grid");
 grid.style.display="flex";
 grid.style.flexDirection="column";
 grid.style.alignItems="center";
-grid.style.paddingTop='20px'
-grid.style.paddingBottom='20px'
+grid.style.marginTop='20px'
+grid.style.marginBottom='20px'
 grid.style.flex=1;
+grid.style.backgroundColor="white";
+grid.style.padding='0px'
 
 let input=16;
 let side=30;
@@ -45,7 +47,8 @@ function updateGrid (input,side) {
         {
             let box=document.createElement('div');
 
-            box.style.border="1px solid black";
+            
+            box.style.border="1px dotted gray"
             box.style.width=`${side}px`;
             box.style.height=`${side}px`;
             box.classList.add("boxes");
